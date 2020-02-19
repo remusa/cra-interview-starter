@@ -14,7 +14,7 @@ const Layout = styled.div`
   height: 100vh;
 `
 
-function App() {
+const App: React.FC = () => {
   return (
     <Layout>
       <Header />
