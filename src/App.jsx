@@ -21,7 +21,7 @@ function App() {
 
       <Main>
         <Switch>
-          <Route path='/login'>
+          <Route path='/example'>
             <ExamplePage />
           </Route>
 
