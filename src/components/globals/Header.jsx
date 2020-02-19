@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const StyledHeader = styled.header`
@@ -27,9 +28,9 @@ const Header = () => {
   return (
     <StyledHeader>
       <div className='left'>
-        <a className='link' href='/' target='_blank' rel='noopener noreferrer'>
+        <Link className='link' to='/'>
           Home
-        </a>
+        </Link>
       </div>
 
       <div className='right'>
