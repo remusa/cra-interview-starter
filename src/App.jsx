@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Main from './components/Main'
 
-const StyledApp = styled.div`
+const Layout = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -13,11 +13,11 @@ const StyledApp = styled.div`
 
 function App() {
   return (
-    <StyledApp>
+    <Layout>
       <Header />
       <Main />
       <Footer />
-    </StyledApp>
+    </Layout>
   )
 }
 
