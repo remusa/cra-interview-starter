@@ -1,8 +1,11 @@
 import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Main from './components/Main'
+import ExamplePage from './components/ExamplePage'
+import Footer from './components/globals/Footer'
+import Header from './components/globals/Header'
+import Main from './components/globals/Main'
+import HomePage from './components/HomePage'
 
 const Layout = styled.div`
   display: flex;
@@ -15,7 +18,19 @@ function App() {
   return (
     <Layout>
       <Header />
-      <Main />
+
+      <Main>
+        <Switch>
+          <Route path='/login'>
+            <ExamplePage />
+          </Route>
+
+          <Route exact path='/'>
+            <HomePage />
+          </Route>
+        </Switch>
+      </Main>
+
       <Footer />
     </Layout>
   )
