@@ -33,7 +33,7 @@
       {
         "devDependencies": true
       }
-    ]
+    ],
     "no-unused-expression": [true, "allow-tagged-template"]
   }
 }
