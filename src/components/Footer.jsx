@@ -10,7 +10,17 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <p>2020</p>
+      <p>
+        © 2020{' '}
+        <a
+          className='link'
+          href='https://renems.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          RMS
+        </a>
+      </p>
     </StyledFooter>
   )
 }

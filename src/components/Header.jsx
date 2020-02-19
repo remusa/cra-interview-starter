@@ -50,6 +50,15 @@ const Header = () => {
         >
           GitHub
         </a>
+
+        <a
+          className='link'
+          href='https://stackoverflow.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          StackOverflow
+        </a>
       </div>
     </StyledHeader>
   )
