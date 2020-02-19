@@ -1,0 +1,39 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 100,
+        "tabWidth": 2,
+        "semi": false,
+        "jsxSingleQuote": true,
+        "useTabs": false,
+        "jsxBracketSameLine": false,
+        "endOfLine": "auto",
+        "bracketSpacing": true
+      }
+    ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
+    "react/jsx-filename-extension": [
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
+    "no-unused-expression": [true, "allow-tagged-template"]
+  }
+}
