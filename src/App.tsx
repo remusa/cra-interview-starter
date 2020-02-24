@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
-import Footer from './components/globals/Footer'
-import Header from './components/globals/Header'
-import Main from './components/globals/Main'
+import Footer from './components/layout/Footer'
+import Header from './components/layout/Header'
+import Main from './components/layout/Main'
 import HomePage from './components/HomePage'
 
 const Layout = styled.div`
