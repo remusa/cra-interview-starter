@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import logo from '../../logo.svg'
 
 const StyledHeader = styled.header`
   display: flex;
@@ -29,7 +30,7 @@ const Header = () => {
     <StyledHeader>
       <div className='left'>
         <Link className='link' to='/'>
-          Home
+          <img src={logo} alt='logo' />
         </Link>
       </div>
 
@@ -50,15 +51,6 @@ const Header = () => {
           rel='noopener noreferrer'
         >
           GitHub
-        </a>
-
-        <a
-          className='link'
-          href='https://stackoverflow.com'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          StackOverflow
         </a>
       </div>
     </StyledHeader>
